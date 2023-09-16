@@ -67,7 +67,6 @@ h1 {
     font-size:small;
 }
 
-
 .security-icon{
     /* display: flex;
     justify-content: center; */
@@ -87,7 +86,6 @@ h1 {
     width: 450px;
     
 }
-
 
 .icons{
     display: flex;
@@ -114,8 +112,20 @@ h1 {
     display: flex;
     justify-content: center;
     background-color: rgb(205, 27, 211);
+   
     
-    
+}
+
+button.btn {
+    background: #004dc0;
+    color: #fff;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 0.8em 2em;
+    letter-spacing: 1px;
+    outline: none;
+    border: none;
+    /* width: 100%; */
 }
 
 .links{
@@ -124,23 +134,23 @@ h1 {
     /* justify-content: center; */
     align-items: center;
     background-color: rgb(223, 138, 35);
-    
+    font-size: 11px;
+	color: #e2e2e2;
+	text-transform: uppercase;
     
 }
-
 
 .other-logins{
     display: flex;
     background-color: rgb(47, 189, 207);
-    margin: 2em 0 0
-    
+    margin: 2em 0 0;
 }
 .other-logins span.fa {
 	color: #fff;
 	font-size: 15px;
 	line-height: 25px;
 	margin: 0 5px;
-
+    transition: 0.5s all;
 }
 .other-logins a.facebook{
     background: #3b5998;
@@ -158,4 +168,8 @@ h1 {
     background-color: rgb(223, 226, 47);
     
     
+}
+
+a:-webkit-any-link {
+    cursor: pointer;
 }
