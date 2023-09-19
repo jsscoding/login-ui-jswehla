@@ -1,13 +1,19 @@
-/* Base Settings for Login UI */
-body, form, .container, .security-icon, .login-box, .login-prompt, .icons, .login-button,
+/* Shared Settings for Login UI */
+body, form, .height, .width, .container, .security-icon, .login-box, .login-prompt, .icons, .login-button,
 .accounts, .other-logins, .copyright {
     display: flex;
     justify-content: center;
     font-family: 'Montserrat', sans-serif;
     font-size: 15px;
     color: white;
+    width: 100%;
 }
 
+/* Set "canvas" height */
+body{
+    height: 95vh;
+    width: 95vw;
+}
 
 h1 {
 	font-size: 45px;
@@ -24,22 +30,16 @@ a:-webkit-any-link {
     color: white;
 }
 
-form {
-    /* display: flex;
-    justify-content: center; */
+.height {
     flex-direction: column;
-    width: 100%;
-    
 }
 
 .container{
     background: aqua;
-    /* display: flex; */
     flex-direction: column;
     align-items: center;
-    /* justify-content: center; */
     width: 400px;
-    min-width: 250px;
+    min-width: 280px;
     box-shadow: 25px 25px 75px rgba(71, 65, 95,1);
     -webkit-box-shadow: 25px 25px 75px rgba(71, 65, 95,1); 
 	-moz-box-shadow: 25px 25px 75px rgba(71, 65, 95,1); 
@@ -55,26 +55,20 @@ form {
     border-bottom-right-radius: 25px;
     -webkit-border-bottom-right-radius: 25px;
     -moz-border-bottom-right-radius: 25px;
-    
 }
 
-/* .background {
-    background: black;
-    width: 100%
-} */
+form {
+    flex-direction: column;
+    /* width: 100%; */
+}
 
 .security-icon {
-    /* background: grey;
-    display: flex; */
     justify-content: space-around;
     font-size: 50px;
     margin-bottom: .5em;
-
 }
 
 .login-box {
-    /* background: red; */
-    /* display: flex; */
     flex-direction: column;
     align-items: center;
     font-size:small;
@@ -84,16 +78,14 @@ form {
     background: green;
 } */
 
-
 .icons {
-    /* display: flex; */
-    /* flex-direction: column; */
     align-self: center;
     gap: 5px;
-    /* width: 70%; */
     background: white;
 	padding: .75em ;
     margin: 1em;
+    width: 50%;
+    min-width: 200px;
     border-top-left-radius: 15px;
     -webkit-border-top-left-radius: 15px;
     -moz-border-top-left-radius: 15px; 
@@ -120,8 +112,6 @@ form {
 
 /* .login-button{
     background: magenta;
-    display: flex;
-    justify-content: center;   
 } */
 
 button.btn {
@@ -139,20 +129,17 @@ button.btn {
 
 .accounts{
     /* background: orange; */
-    /* display: flex; */
     flex-wrap: wrap;
-    align-items: center;
     justify-content: space-around;
+    align-items: center;
     font-size: 11px;
 	text-transform: uppercase;
     margin: 10px 0;
 }
 
 .other-logins{
-    /* display: flex; */
     align-items: center;
     gap: 15px;
-    /* font-size: 15px; */
 }
 .other-logins span.fa {
 	font-size: 10px;
@@ -178,9 +165,7 @@ button.btn {
 }
 
 .copyright{
-    /* background: rgb(223, 226, 47); */
-    /* display: flex; */
+    /* background: gold; */
     gap: 10px;
-    /* justify-content: center; */
     flex-wrap: wrap;
 }
