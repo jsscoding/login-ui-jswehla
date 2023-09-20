@@ -42,10 +42,13 @@ a:-webkit-any-link {
     background: wheat;
     flex-direction: column;
     align-items: center;
-    width: 400px;
+    justify-content: space-evenly;
+    width: 60%;
     min-width: 280px;
-    min-height: 450px;
-    height: 60%;
+    max-width: 400px;
+    height: 90%;
+    min-height: 550px;
+    max-height: 650px;
     box-shadow: 25px 25px 75px rgba(71, 65, 95,1);
     -webkit-box-shadow: 25px 25px 75px rgba(71, 65, 95,1); 
 	-moz-box-shadow: 25px 25px 75px rgba(71, 65, 95,1);
@@ -76,25 +79,16 @@ form {
 } */
 
 .icons {
-    align-self: center;
-    gap: 5px;
     background: white;
-	padding: .75em ;
+	align-self: center;
+    gap: 5px;
+    padding: .75em ;
     margin: 1em;
     width: 50%;
     min-width: 200px;
-    border-top-left-radius: 15px;
-    -webkit-border-top-left-radius: 15px;
-    -moz-border-top-left-radius: 15px; 
-    border-top-right-radius: 15px;
-    -webkit-border-top-right-radius: 15px;
-    -moz-border-top-right-radius: 15px; 
-    border-bottom-left-radius: 15px;
-    -webkit-border-bottom-left-radius: 15px;
-    -moz-border-bottom-left-radius: 15px; 
-    border-bottom-right-radius: 15px;
-    -webkit-border-bottom-right-radius: 15px;
-    -moz-border-bottom-right-radius: 15px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
 }
 .icons span.fa {
     color: black;
