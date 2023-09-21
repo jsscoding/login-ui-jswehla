@@ -6,9 +6,8 @@ form, .canvas, .container, .login-ui-header, .login-box, .login-prompt, .prompts
     font-family: 'Montserrat', sans-serif;
     font-size: 15px;
     font-weight: bold;
-    color: #11073B;
+    color: white;
     width: 100%;
-    text-shadow: 2px 2px 3px rgba(134, 125, 176, 1);
 }
 
 /* Set to avoid scrollbars */
@@ -18,21 +17,6 @@ body {
     background-image: url(background.jpg);
     background-size:cover;
 }
-
-.prompts input {
-    border: none;
-    text-align: center;
-    width: 80%;
-}
-/* .prompts input:focus{
-    background: blue;
-    border-color: #1997e4;
-
-}
-.prompts input:active{
-    border-color: #550000;
-    background-color: skyblue;
-} */
 
 a:-webkit-any-link {
     cursor: pointer;
@@ -64,7 +48,7 @@ a:-webkit-any-link {
 	-moz-box-shadow: 25px 25px 75px rgb(169, 169, 189);
     border-radius: 25px;
     -webkit-border-radius: 25px;
-    -moz-border-radius: 25px; 
+    -moz-border-radius: 25px;
 }
 
 .login-ui-header {
@@ -104,11 +88,26 @@ form {
     color: black;
     font-size: 25px;
 }
+.prompts:focus{
+    background: blue;
+    border-color: #1997e4;
+
+}
+.prompts:active{
+    border-color: #550000;
+    background: skyblue;
+}
+.prompts input {
+    border: none;
+    text-align: center;
+    width: 80%;
+}
 
 .checkbox{
     /* background: yellow; */
     margin: 10px;
     text-align: center;
+    text-shadow: 2px 2px 3px black;
 }
 
 /* .login-button{
@@ -140,11 +139,13 @@ button.btn:hover{
     font-size: 11px;
 	text-transform: uppercase;
     margin: 10px 0;
+    text-shadow: 2px 2px 3px black;
 }
 
 .other-logins{
     align-items: center;
     gap: 15px;
+    text-shadow: 2px 2px 3px black;
 }
 .other-logins a{
     display: flex;
@@ -175,4 +176,5 @@ button.btn:hover{
     gap: 10px;
     flex-wrap: wrap;
     margin-bottom: 10px;
+    text-shadow: 2px 2px 3px black;
 }
