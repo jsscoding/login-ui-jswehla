@@ -71,7 +71,7 @@ a:-webkit-any-link {
     text-align: center;
     font-size: 40px;
     margin-top: 10px;
-    color: #AA9439;
+    color: #554500;
 }
 
 .login-box {
@@ -128,6 +128,10 @@ button.btn {
     cursor: pointer;
 }
 
+button.btn:hover{
+    background: #801515;
+}
+
 .accounts{
     /* background: orange; */
     flex-wrap: wrap;
@@ -142,10 +146,6 @@ button.btn {
     align-items: center;
     gap: 15px;
 }
-.other-logins span.fa {
-	font-size: 15px;
-	/* line-height: 40px; */
-}
 .other-logins a{
     display: flex;
     justify-content: center;
@@ -154,6 +154,11 @@ button.btn {
     width: 35px;
     height: 35px;
     text-decoration: none;
+}
+.other-logins a:hover{
+    width: 60px;
+    height: 60px;
+    font-size: 40px;
 }
 .other-logins a.facebook{
     background: #314d89;
